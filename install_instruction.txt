@@ -1,0 +1,11 @@
+1. if not root user, run:
+$ sudo su
+2. go to install folder
+3. grant permission
+chmod +x *.sh
+4. run script
+$ ./install_python2_virtualenv.sh
+$ ./install.sh
+$ ./install_setup.sh
+
+
