@@ -1,6 +1,6 @@
 # run install_python2_virtualenv.sh first
-cp requirements.txt ~
-cp cv2.so ~
+cp ./requirements.txt ~
+cp ./cv2.so ~
 cd ~
 virtualenv -p python venv
 source ~/venv/bin/activate && pip install -r requirements.txt && deactivate
