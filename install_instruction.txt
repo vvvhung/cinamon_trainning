@@ -6,6 +6,8 @@ chmod +x *.sh
 4. run script
 $ ./install_python2_virtualenv.sh
 $ ./install.sh
+$ ./build_opencv.sh
+5. after clone project
 $ ./install_setup.sh
 
 
