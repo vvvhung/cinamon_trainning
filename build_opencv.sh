@@ -3,8 +3,11 @@ apt-get update
 apt-get install build-essential cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev libjpeg8-dev libtiff5-dev libjasper-dev libpng12-dev libatlas-base-dev gfortran libgtk-3-dev unzip libleptonica-dev libtesseract-dev python-tk tesseract-ocr tesseract-ocr-eng tesseract-ocr-osd tesseract-ocr-equ tesseract-ocr-jpn libhdf5-dev
 wget -O opencv-3.3.0.zip https://github.com/opencv/opencv/archive/3.3.0.zip
 wget -O opencv-3.3.0-contrib.zip https://github.com/opencv/opencv_contrib/archive/3.3.0.zip
-unzip opencv-3.3.0.zip
-unzip opencv-3.3.0-contrib.zip
+cp opencv-3.3.0.zip ~/opencv-3.3.0.zip
+cp opencv-3.3.0-contrib.zip ~/opencv-3.3.0-contrib.zip
+cd ~
+unzip ~/opencv-3.3.0.zip
+unzip ~/opencv-3.3.0-contrib.zip
 cd opencv-3.3.0
 mkdir build
 cd build
