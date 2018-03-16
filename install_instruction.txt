@@ -6,8 +6,12 @@ chmod +x *.sh
 4. run script
 $ ./install_python2_virtualenv.sh
 $ ./install.sh
+5. install or build opencv
+- build
 $ ./build_opencv.sh
-5. after clone project
+- install
+pip install opencv-contrib-python
+6. after clone project
 $ ./install_setup.sh
 
 
