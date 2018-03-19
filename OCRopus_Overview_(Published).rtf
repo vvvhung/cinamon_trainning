@@ -1,0 +1,2205 @@
+{\rtf1\ansi\deff0\deflang2057\plain\fs24\fet1
+{\fonttbl
+{\f0\froman Arial;}
+}
+{\info
+{\createim\yr2018\mo3\dy16\hr3\min58}
+}
+
+\paperw11907\paperh16840\margl1800\margr1800\margt1440\margb1440
+\slmult0\ltrpar\li0
+{\b\fs24
+OCRopus Overview (Published)
+}
+\par\pard\plain
+\slmult0\ltrpar\li200
+{\fs24
+commands
+}
+\par\pard\plain
+\slmult0\ltrpar\li400
+{\fs20
+recognition
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+Tools for recognizing text on collections of pages.
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+ocropus-nlbin
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+purpose
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+noise and border removal
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+page rotation correction
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+grayscale normalization
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+binarization
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+usage
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+ocropus-nlbin image1.png image2.png ...
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+inputs
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+image1.png
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+outputs
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+image1.nrm.png
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+normalized grayscale image
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+image1.bin.png
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+binarized image
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+notes
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+optimized for 300dpi book pages
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+other kinds of inputs may require parameter adjustments
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+parameters
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+TBD
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+ocropus-gpageseg
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+purpose
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+column finding
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+text line finding
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+usage
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+ocropus-gpageseg page1.png page2.png ...
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+ocropus-gpageseg 'book/????.png'
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+inputs
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+page1.png
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+binarized or normalized page image
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+won't work well on other kinds of grayscale inputs
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+also looks for page1.nrm.png and page1.bin.png and uses them if available
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+outputs
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+page1.pseg.png
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+page segmentation file
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+page1/010001.png
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+text lines
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+page1/010001.nrm.png
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+grayscale text line (if .nrm.png page image was available)
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+notes
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+optimized for 300 dpi book pages
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+other kinds of inputs may require parameter adjustment
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+this program is really more of a placeholder and will be replaced by trainable layout analysis
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+limitations
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+no text/image segmentation; pages with complex figures will result in a lot of "noise"
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+column finding performance is variable depending on the input documents
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+text lines printed in very large fonts will get erroneously split horizontally, leading to misrecognition
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+TODO
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+improve column finding
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+add image detection / removal
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+ocropus-rpred
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+purpose
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+apply an neural network recognizer
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+usage
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+ocropus-rpred line1.png line2.png ...
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+inputs
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+line1.bin.png
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+will automatically expand glob patterns in its arguments
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+outputs
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+line1.txt
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+notes
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+recognizer is currently trained on UW3 and UNLV data; you can load other models with -m
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+also performs text line normalization
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+limitations
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+current models are trained on modern type fonts and flatbed scans (UW3, UNLV); performance will be worse on other kinds of inputs
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+parameters
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+-m model.pyrnn
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+a line recognizer model is just a pickled Python object
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+TBD
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+ocropus-hocr
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+purpose
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+outputs hOCR encoded recognition output
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+usage
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+ocropus-hocr bookdirectory -o book.html
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+notes
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+outputs hOCR format, including bounding boxes for text lines and per-line baseline information
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+also outputs font size information
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+TODO
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+lots of bug fixing and testing using the new pipeline
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+optionally output word and character bounding boxes
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+output more font-related information
+}
+\par\pard\plain
+\slmult0\ltrpar\li400
+{\fs20
+training tools
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+Tools for training OCRopus to recognize new scripts and languages.
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+ocropus-rtrain
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+purpose
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+train a neural network recognizer
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+usage
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+ocropus-rtrain -o newmodel.pyrnn line1.png line2.png ...
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+inputs
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+line1.png line1.gt.txt etc.
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+will automatically expand glob patterns in its arguments
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+outputs
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+new recurrent neural network model
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+notes
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+transcriptions should be in Unicode
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+internally, text lines will be normalized prior to training/recognition; the normalization process may need modification for some scripts
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+parameters
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+-s 4
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+show every fourth input for debugging purposes
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+TBD
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+ocropus-gtedit html
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+purpose
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+line-wise correction of input text
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+usage
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+ocropus-gtedit html -o mypage.html *.png
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+inputs
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+PNG image files representing text lines
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+corresponding .txt or .gt.txt files
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+outputs
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+an HTML file containing both images and corresponding text (in text input boxes)
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+ocropus-gtedit extract
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+purpose
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+extract ground truth from an edited HTML file created with ocropus-gtedit
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+usage
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+ocropus-gtedit extract -o mydir mypage.html
+}
+\par\pard\plain
+\slmult0\ltrpar\li400
+{\fs20
+visualization tools
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+Tools that helps with debugging and identifying the sources of recognition errors.
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+ocropus-showline
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+purpose
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+show text line recognition results and details
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+ocropus-showpage
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+purpose
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+show page recognition results and details
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+usage
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+ocropus-showpage book/0001.bin.png
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+ocropus-showpage book/0001.bin.png -o debug.png
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+TODO
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+ocropus-showpage 'book/????.bin.png' --index index.html
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+ocropus-visualize-results
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+ocropus-submit
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+purpose
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+submit a bug report
+}
+\par\pard\plain
+\slmult0\ltrpar\li400
+{\fs20
+character-level recognizer
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+These are the tools for an older, character level recognizer.
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+recognition
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+ocropus-lattices
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+purpose
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+compute recognition lattices for text lines
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+usage
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+ocropus-lattices line1.png line2.png ...
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+inputs
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+line1.png
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+optionally uses line1.nrm.png
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+will automatically expand glob patterns in its arguments
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+outputs
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+line1.rseg.png
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+line1.lattice
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+optionally outputs line1.txt
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+notes
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+recognizer is currently trained on UW3 and UNLV data
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+input text should be around 300 dpi, rescale prior to recognition if necessary
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+will refuse to recognize lines that are too small or too large (override with --xheightrange)
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+examine the output/performance with "ocropus-showline image.png"; it will display all the intermediate recognition results
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+also performs text line extraction (see below)
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+limitations
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+current models are trained on modern type fonts and flatbed scans (UW3, UNLV); performance will be worse on other kinds of inputs
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+current models have not been trained on ligatures or unsegmentable pairs, leading to some digraphs being misrecognized frequently in some printing styles
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+parameters
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+-m model.cmodel
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+a character model is just a pickled Python class with a coutputs method
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+input to the character recognizer is a normalized character model (depending on the normalization mode)
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+TBD
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+ocropus-ngraphs
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+purpose
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+perform language modeling
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+usage
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+ocropus-ngraphs 'book/????/??????.png'
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+ocropus-ngraphs line1.lattice line2.lattice ...
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+inputs
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+line1.lattice
+}
+\par\pard\plain
+\slmult0\ltrpar\li1600
+{\fs20
+a lattice produced by ocropus-lattices
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+will automatically expand glob patterns in its arguments
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+outputs
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+line1.txt
+}
+\par\pard\plain
+\slmult0\ltrpar\li1600
+{\fs20
+recgonized text
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+line1.cseg.png
+}
+\par\pard\plain
+\slmult0\ltrpar\li1600
+{\fs20
+aligned character segmentation for the recognized output
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+notes
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+language models are easy to train: all you need is a collection of text files, and you run ocropus-ngraphs --build over them; see below
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+parameters
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+There are many parameters that trade off the language model against characters, etc.  They can make a big difference.
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+You need to experiment (with some scripts generating various different combinations) to see what works for you.
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+Parameters will depend on how similar your unknown text is to your inputs, how good your character recognizer is, and how good its weights are
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+Language models make a distinction between weights and whether a string is in the language model at all.
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+There are a number of language models (default-2.ngraphs through default-6.ngraphs) available for download (see the web site).  There were derived from Project Gutenberg texts, as well as the UW3 and UNLV databases.
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+limitations
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+language models may not help recognition rates much, and can hurt recognition
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+language model parameters are highly dependent on both quality and content of the input
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+TODO
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+simple back-off
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+discriminative training of weights
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+character training
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+ocropus-tsplit
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+purpose
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+computes a tree vector quantizer for its inputs
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+ocropus-tleaves
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+purpose
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+computes terminal classifiers for each vector quantization bucket
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+ocropus-wtrain
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+purpose
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+trains a whitespace model
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+TODO
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+training of whitespace models is currently broken; this command will be replaced
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+ocropus-db
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+purpose
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+manipulate character databases
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+character databases are stored in HDF5 format
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+subcommands
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+cat db1 db2 ... -o db
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+concatenates one or more databases, optionally selecting classes and changing class labels
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+shuffle db -o out-db
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+take a random sample from a database or shufflle all its elements
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+tess2h5 *.tiff -o tess.h5
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+converts Tesseract box files to OCRopus HDF5 databases for training
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+predict -m model db.h5
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+evaluate a character recognizer on a database
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+cnormalize input -o db.h5
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+change a database from line-based size normalization to character based size normalization
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+zoom -f factor input -o db.h5
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+change the resolution of a database
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+ocropus-cedit
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+purpose
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+show and edit character databases
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+TODO
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+show and edit treevq files
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+language models
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+ocropus-ngraphs --build
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+purpose
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+build ngraph language models from a text corpus
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+data generation
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+ocropus-align
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+purpose
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+aligns text line images with ground truth
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+TODO
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+output line1.cseg-aligned.png
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+perform page level alignment (as before); maybe separate tool
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+ocropus-lattices --extract
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+purpose
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+extract individual characters for training
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+usage
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+ocropus-lattices --extract -o chardb.h5 image1.png image2.png
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+ocropus-lattices --extract -o chardb.h5 'book/????/??????.png'
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+ocropus-linegen
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+purpose
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+generate text lines for training
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+TODO
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+port over from llpy
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+ocropus-db tess2h5
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+see above
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+visualization
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+ocropus-ngraphs --print
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+usage
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+ocropus-ngraphs --print some.lattice
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+purpose
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+prints a textual representation of the recognition lattice
+}
+\par\pard\plain
+\slmult0\ltrpar\li200
+{\fs24
+files
+}
+\par\pard\plain
+\slmult0\ltrpar\li400
+{\fs20
+intermediate files during recognition
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+file formats
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+File formats are documented externally; please follow the links.
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+.pseg.png
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+http://goo.gl/9IfXM
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+.rseg.png
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+http://goo.gl/9IfXM
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+.cseg.png
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+http://goo.gl/9IfXM
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+.lattice
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+http://goo.gl/9IfXM
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+.aligned
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+http://goo.gl/9IfXM
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+hOCR output
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+http://goo.gl/zXNrC
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+directory layout
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+Although many OCRopus commands work on individual files, there is a standard directory layout that some tools expect.  It consists of a top level directory containing files of the form 0001.extension for each page, and containing subdirectories of the form 0001, that in turn contain files for each line.
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+book
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+0001.bin.png
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+A deskewed, binarized page image.
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+0001.nrm.png
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+A deskewed, intensity normalized page image.
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+0001.pseg.png
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+A color-coded page segmentation file.
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+0001
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+There is one of these directories for each input page.
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+Produced by the page layout analysis program (e.g., ocropus-gpageseg)
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+Each file name corresponds to the hex RGB value of the corresponding pixels in the 0001.pseg.png page segmentation file.
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+010001.bin.png
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+A binary text line image.
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+Produced by e.g., ocropus-gpageseg
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+010001.nrm.png
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+An intensity normalized grayscale text line image.
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+Produced by e.g., ocropus-gpageseg
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+010001.rseg.png
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+A raw character segmentation image.
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+Produced by ocropus-lattices
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+Some tools assume that this is also a good binarization of the input (FIXME), but really a good binarization is this image masked with the .bin.png image
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+010001.lattice
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+A recognition lattice.
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+Produced by ocropus-lattices
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+010001.cseg.png
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+An aligned character segmentation.
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+Produced by ocrpous-align and ocropus-ngraphs
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+010001.aligned
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+Aligned character data.
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+Produced by ocropus-align and ocropus-ngraphs (FIXME)
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+This encodes ligatures and pseudo ligatures using notation like "_fi_".
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+010001.gt.txt
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+Ground truth text used for training.
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+Used as input by ocropus-align
+}
+\par\pard\plain
+\slmult0\ltrpar\li400
+{\fs20
+model files
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+These are the models responsible for recognition.
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+.cmodel
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+A pickled python object representing a character classifier.
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+members
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+coutputs(image) -> [(cls,prob),...]
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+Returns a list of classes and probabilities for the given input image.
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+sizemode
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+indicates how characters are expected to be scaled for this classifier
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+"perchar" - use rescaling as implemented by improc.classifier_normalize
+}
+\par\pard\plain
+\slmult0\ltrpar\li1400
+{\fs20
+"perline" - use rescaling as implemented by improc.line_normalize
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+comments
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+training with "ocropus-tsplit" and "ocropus-tleaves" or other kinds of character training tools
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+primarily responsible for recognition of characters
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+cmodels may expect different size normalization of their inputs
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+mismatches between normalization and sizemode will lead to very poor recognition performance
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+the sizemode is stored in the sizemode member (see above)
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+Latin script is particularly sensitive to the size and position of characters and requires "linerel" mode; for many other scripts (Chinese, Japanese, Greek, Hebrew, etc.), the "perchar" sizemode is easier to train and use
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+If characters are trained with "linerel" mode, you need to have a .lineest model
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+.lineest
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+A pickled Python object with two methods returning polynomial models of the baseline and xline.
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+members
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+lineFit(image) -> (bl_poly,xl_poly)
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+returns two polynomials suitable for evaluation with polyval (just a list of coefficients), one for the baseline, one for the x line
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+comments
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+training with "python -m ocrolib.lineest" command
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+if the script is similar to Latin script, probably doesn't need retraining
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+Line estimators are only needed for scripts in which relative size and position of characters makes a significant difference.  For most scripts other than Latin scripts this isn't the case.
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+.ngraphs
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+A pickled Python object representing conditional probabilities.
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+members
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+all the members are private (the class is only used by ocropus-ngraphs)
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+comments
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+training with "ocropus-ngraphs" command
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+this is easy to train, and needs to be trained even for different corpora
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+recognition performance is quite sensitive to the parameters given to ocropus-ngraphs (e.g., language model weight etc.); this tricky tradeoff between language models and character recognition is true of all OCR engines
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+.wmodel
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+A pickled Python object estimating the probabilities that there is a space at a particular location.
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+members
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+setLine(image)
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+Sets the line image.
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+classifySpace(x) -> (no,yes)
+}
+\par\pard\plain
+\slmult0\ltrpar\li1200
+{\fs20
+Returns the probability that there is no space, a space, for the character ending at location x in the input image.
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+comments
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+the training tools for this is currently broken; it will be replaced
+}
+\par\pard\plain
+\slmult0\ltrpar\li200
+{\fs24
+library
+}
+\par\pard\plain
+\slmult0\ltrpar\li400
+{\fs20
+utility
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+default
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+a few default paths
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+this is also read by setup.py
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+TODO
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+rename to defaults.py
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+toplevel
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+decorators etc. intended to be imported at toplevel (very few)
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+in particular, contains the @checks decorator, which checks arguments to Python functions
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+there is a large number of argument checks defined, relevant to image processing and OCR
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+common
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+reading and writing of images, segmentation files, etc.
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+dealing with file names and directories
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+some general simple image processing functions
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+some unicode-related utilities
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+warnings
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+checks
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+loading and instantiating components
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+TODO
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+move exceptions and annotations to toplevel.py
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+use warning, checks, etc. more consistently
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+use mkpython more consistently
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+remove old make_I... functions
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+move rect_union to sl
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+move drawing functions into separate module
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+make gt_explode/implode into Python codec
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+sl
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+utilities for dealing with Python tuples-of-slices as rectangles
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+native
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+a small library from embedding C code inside Python
+}
+\par\pard\plain
+\slmult0\ltrpar\li400
+{\fs20
+image processing
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+morph
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+morphological operations to completely scipy.ndimage.morphology
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+improc
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+various image processing operations
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+lineproc
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+image processing specifically related to text lines
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+psegutils
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+image processing specifically related to page images
+}
+\par\pard\plain
+\slmult0\ltrpar\li400
+{\fs20
+pattern recognition
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+patrec
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+various pattern recognition algorithms
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+mlinear
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+linear classifiers, logistic regression
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+mlp
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+MLPs and backpropagation
+}
+\par\pard\plain
+\slmult0\ltrpar\li400
+{\fs20
+recognition
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+wmodel
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+white space models
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+lineseg
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+line segmentation by connected components
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+line segmentation by dynamic programming cuts
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+linerec
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+text line recognition
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+lineest
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+line geometry estimation
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+finds the baseline and xline of text lines
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+trained models of the form name.lineest
+}
+\par\pard\plain
+\slmult0\ltrpar\li400
+{\fs20
+text
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+lang
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+language and script related data
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+TODO
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+merge with ligatures.py
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+ligatures
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+encoding and decoding of ligatures as integers, related functions
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+lattice
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+reads lattice files and augments them with some transitions; used for both alignment and language modeling
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+notes
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+you should usually use linerec.read_lattice and linerec.write_lattice
+}
+\par\pard\plain
+\slmult0\ltrpar\li800
+{\fs20
+TODO
+}
+\par\pard\plain
+\slmult0\ltrpar\li1000
+{\fs20
+change the name to something less generic
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+ngraphs
+}
+\par\pard\plain
+\slmult0\ltrpar\li600
+{\fs20
+hocr
+}
+\par\pard\plain
+\slmult0\ltrpar\li200
+{\fs24
+KEY
+}
+\par\pard\plain
+\slmult0\ltrpar\li400
+{\fs20
+this is a command
+}
+\par\pard\plain
+\slmult0\ltrpar\li400
+{\fs20
+this is an obsolete command
+}
+\par\pard\plain
+\slmult0\ltrpar\li400
+{\fs20
+this is an unimplemented comand
+}
+\par\pard\plain
+\slmult0\ltrpar\li400
+{\fs20
+this is a group of modules by function
+}
+\par\pard\plain
+\slmult0\ltrpar\li400
+{\fs20
+this is a module in ocrolib
+}
+\par\pard\plain
+\slmult0\ltrpar\li400
+{\fs20
+this is a file name in the directory hierarchy
+}
+\par\pard\plain
+\slmult0\ltrpar\li400
+{\fs20
+this is a file format
+}
+\par\pard\plain
+\slmult0\ltrpar\li400
+{\fs20
+click on the +/- signs to expand/collapse nodes
+}
+\par\pard\plain
+}
